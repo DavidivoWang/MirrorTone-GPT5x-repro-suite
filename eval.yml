@@ -1,0 +1,73 @@
+name: Eval GPT-5x Repro Suite
+
+on:
+  workflow_dispatch:
+    inputs:
+      baseline_model:
+        description: "Baseline model id (e.g., gpt-5.1)"
+        required: true
+      candidate_model:
+        description: "Candidate model id (e.g., gpt-5.2)"
+        required: true
+      interface:
+        description: "API interface: responses | chat"
+        required: true
+        default: "responses"
+
+permissions:
+  contents: write
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run eval (baseline)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/eval.py \
+            --run_id "${{ github.run_id }}" \
+            --model "${{ inputs.baseline_model }}" \
+            --interface "${{ inputs.interface }}" \
+            --outdir "runs" \
+            --tag "baseline"
+
+      - name: Run eval (candidate)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/eval.py \
+            --run_id "${{ github.run_id }}" \
+            --model "${{ inputs.candidate_model }}" \
+            --interface "${{ inputs.interface }}" \
+            --outdir "runs" \
+            --tag "candidate"
+
+      - name: Make delta table
+        run: |
+          python scripts/make_delta.py \
+            --baseline "${{ inputs.baseline_model }}" \
+            --candidate "${{ inputs.candidate_model }}" \
+            --runs_dir "runs" \
+            --out_md "docs/delta_table.md"
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add runs docs/delta_table.md
+          git commit -m "eval: ${{ inputs.baseline_model }} vs ${{ inputs.candidate_model }}" || exit 0
+          git push
