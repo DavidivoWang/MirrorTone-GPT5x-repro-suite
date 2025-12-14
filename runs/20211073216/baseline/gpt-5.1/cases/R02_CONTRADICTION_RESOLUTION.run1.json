@@ -1,0 +1,26 @@
+{
+  "case_id": "R02_CONTRADICTION_RESOLUTION",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"can_both_be_true\": false, \"resolution\": \"B contradicts A; if a black swan exists, not all swans are white.\"}",
+  "usage": {
+    "input_tokens": 56,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 43,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 99
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'json_value_type', 'path': ['can_both_be_true'], 'value_type': 'bool'}:manual_check:{'type': 'json_value_type', 'path': ['can_both_be_true'], 'value_type': 'bool'}",
+    "{'type': 'json_value_type', 'path': ['resolution'], 'value_type': 'str'}:manual_check:{'type': 'json_value_type', 'path': ['resolution'], 'value_type': 'str'}",
+    "{'type': 'json_string_max_len', 'path': ['resolution'], 'max_len': 120}:manual_check:{'type': 'json_string_max_len', 'path': ['resolution'], 'max_len': 120}",
+    "{'type': 'no_extra_text', 'json_only': True}:manual_check:{'type': 'no_extra_text', 'json_only': True}"
+  ],
+  "hallucination_flags": 0
+}

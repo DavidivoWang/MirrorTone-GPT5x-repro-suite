@@ -1,0 +1,24 @@
+{
+  "case_id": "S03_JSON_SORTING",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"sorted\":[1,2,2,7,9,10]}",
+  "usage": {
+    "input_tokens": 40,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 25,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 65
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'json_value_equals', 'path': ['sorted'], 'value': [1, 2, 2, 7, 9, 10]}:manual_check:{'type': 'json_value_equals', 'path': ['sorted'], 'value': [1, 2, 2, 7, 9, 10]}",
+    "{'type': 'no_extra_text', 'json_only': True}:manual_check:{'type': 'no_extra_text', 'json_only': True}"
+  ],
+  "hallucination_flags": 0
+}

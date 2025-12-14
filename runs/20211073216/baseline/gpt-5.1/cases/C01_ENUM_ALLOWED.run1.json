@@ -1,0 +1,24 @@
+{
+  "case_id": "C01_ENUM_ALLOWED",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "positive",
+  "usage": {
+    "input_tokens": 34,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 11,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 45
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'one_of', 'choices': ['positive', 'negative', 'mixed']}:manual_check:{'type': 'one_of', 'choices': ['positive', 'negative', 'mixed']}",
+    "{'type': 'no_extra_text', 'single_line': True}:manual_check:{'type': 'no_extra_text', 'single_line': True}"
+  ],
+  "hallucination_flags": 0
+}

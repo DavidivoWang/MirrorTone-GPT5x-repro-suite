@@ -1,0 +1,24 @@
+{
+  "case_id": "S04_JSON_ESCAPING",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"quote\": \"He said: \\\"Hello\\\"\"}",
+  "usage": {
+    "input_tokens": 25,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 21,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 46
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'json_value_equals', 'path': ['quote'], 'value': 'He said: \"Hello\"'}:manual_check:{'type': 'json_value_equals', 'path': ['quote'], 'value': 'He said: \"Hello\"'}",
+    "{'type': 'no_extra_text', 'json_only': True}:manual_check:{'type': 'no_extra_text', 'json_only': True}"
+  ],
+  "hallucination_flags": 0
+}

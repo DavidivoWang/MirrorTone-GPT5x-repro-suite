@@ -1,0 +1,25 @@
+{
+  "case_id": "R01_ERR_FIX_WHY_SRC",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "ERR: Paris is the capital of Germany.\nFIX: Berlin is the capital of Germany.\nWHY: Paris is the capital of France, while Germany’s capital is Berlin.\nSRC: Encyclopaedia Britannica entry on Berlin.",
+  "usage": {
+    "input_tokens": 63,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 48,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 111
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'regex', 'pattern': '(?s)^ERR: .+\\\\nFIX: .+\\\\nWHY: .+\\\\nSRC: .+\\\\Z'}:manual_check:{'type': 'regex', 'pattern': '(?s)^ERR: .+\\\\nFIX: .+\\\\nWHY: .+\\\\nSRC: .+\\\\Z'}",
+    "{'type': 'line_count', 'count': 4}:manual_check:{'type': 'line_count', 'count': 4}",
+    "{'type': 'forbidden_substrings', 'subs': ['http://', 'https://', 'www.']}:manual_check:{'type': 'forbidden_substrings', 'subs': ['http://', 'https://', 'www.']}"
+  ],
+  "hallucination_flags": 0
+}
