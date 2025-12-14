@@ -1,0 +1,21 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"id\":\"spec-audit-3step-plan\",\"steps\":[{\"name\":\"Check completeness and structure\",\"ok\":true,\"reason\":\"Verify the document has all required sections (scope, goals/non-goals, requirements, assumptions, constraints, dependencies, risks, acceptance criteria) and that each section is populated, unambiguous, and internally consistent.\"},{\"name\":\"Validate requirements quality and traceability\",\"ok\":true,\"reason\":\"Review each requirement for clarity, testability, and measurability; remove duplicates; resolve conflicts; ensure each requirement maps to a user need/business objective and has acceptance criteria and a unique identifier for traceability.\"},{\"name\":\"Assess feasibility, risks, and stakeholder alignment\",\"ok\":true,\"reason\":\"Confirm technical feasibility and resource constraints; identify edge cases and failure modes; review security/privacy/compliance impacts; ensure open questions are tracked with owners and due dates; obtain sign-off from key stakeholders.\"}],\"final\":\"Audit the spec by (1) confirming it is complete and well-structured, (2) ensuring requirements are clear, testable, and traceable, and (3) validating feasibility, risks, and stakeholder alignment with documented decisions and sign-off.\"}",
+  "usage": {
+    "input_tokens": 59,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 244,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 303
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

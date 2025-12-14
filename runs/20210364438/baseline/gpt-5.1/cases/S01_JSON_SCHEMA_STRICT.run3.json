@@ -1,0 +1,21 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"id\":\"audit-spec-plan-001\",\"steps\":[{\"name\":\"Scope and structure review\",\"ok\":true,\"reason\":\"Identify the document’s purpose, audience, and boundaries; map its sections; and confirm that all required topics (requirements, constraints, interfaces, assumptions, definitions) are present and logically organized.\"},{\"name\":\"Content quality and consistency check\",\"ok\":true,\"reason\":\"Evaluate each section for clarity, unambiguous language, testability, and completeness; verify that terms are defined and used consistently; check for conflicting requirements, missing edge cases, and alignment with higher-level business or technical goals.\"},{\"name\":\"Validation with stakeholders and traceability\",\"ok\":true,\"reason\":\"Cross-check requirements against source inputs (business needs, regulations, design docs); ensure each requirement is traceable and verifiable; review findings with key stakeholders to confirm correctness, resolve ambiguities, and log agreed changes.\"}],\"final\":\"Follow these three steps—scope and structure review, content quality and consistency check, and stakeholder validation with traceability—to systematically audit the spec document and ensure it is complete, clear, and aligned with its intended goals.\"}",
+  "usage": {
+    "input_tokens": 59,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 240,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 299
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

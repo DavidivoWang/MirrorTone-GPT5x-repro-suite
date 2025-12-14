@@ -1,0 +1,21 @@
+{
+  "case_id": "R02_CONTRADICTION_RESOLUTION",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "ERR: I stated model A has a 1M-token context window.  \nFIX: Model A’s context window is 400k tokens.  \nWHY: I relied on outdated/incorrect specs; the latest documentation revises the maximum context to 400k.  \nSRC: Updated official model documentation / release notes for model A.",
+  "usage": {
+    "input_tokens": 43,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 77,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 120
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

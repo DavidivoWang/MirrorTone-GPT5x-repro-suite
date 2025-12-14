@@ -1,0 +1,21 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 2,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"id\":\"spec-audit-3step-plan\",\"steps\":[{\"name\":\"Scope & completeness check\",\"ok\":true,\"reason\":\"Confirm the document defines goals, non-goals, stakeholders, assumptions, constraints, dependencies, and out-of-scope items; flag missing sections and ambiguous ownership.\"},{\"name\":\"Consistency & testability review\",\"ok\":true,\"reason\":\"Verify requirements are unambiguous, internally consistent, and measurable; ensure each requirement has acceptance criteria, clear terminology, and no conflicting statements across sections.\"},{\"name\":\"Risk, feasibility & traceability audit\",\"ok\":true,\"reason\":\"Assess technical feasibility, security/privacy/compliance impacts, performance/scalability targets, and operational considerations; create a traceability matrix linking requirements to designs, tests, and risks with prioritized follow-ups.\"}],\"final\":\"Use the three steps to identify gaps, remove ambiguity, ensure testable requirements, and produce a prioritized issue list with owners and traceability to risks and validation artifacts.\"}",
+  "usage": {
+    "input_tokens": 59,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 202,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 261
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

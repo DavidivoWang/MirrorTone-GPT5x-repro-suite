@@ -1,0 +1,21 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"id\":\"audit-spec-plan-001\",\"steps\":[{\"name\":\"Scope and structure review\",\"ok\":true,\"reason\":\"Identify document purpose, audience, boundaries, and completeness of major sections (requirements, assumptions, constraints, interfaces, acceptance criteria). Note missing or ambiguous areas.\"},{\"name\":\"Requirement quality and consistency check\",\"ok\":true,\"reason\":\"Evaluate each requirement for clarity, testability, and traceability. Flag vague language, contradictions, duplicates, and misaligned terminology across sections and with referenced documents.\"},{\"name\":\"Risk, validation, and stakeholder alignment assessment\",\"ok\":true,\"reason\":\"Check that risks, edge cases, and non-functional needs are covered; confirm validation/acceptance methods exist; and verify that responsibilities, approvals, and change-control expectations are clearly defined.\"}],\"final\":\"Use these three steps to systematically review scope and structure, requirement quality and consistency, and then risks, validation, and stakeholder alignment to complete a focused audit of the spec document.\"}",
+  "usage": {
+    "input_tokens": 59,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 208,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 267
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

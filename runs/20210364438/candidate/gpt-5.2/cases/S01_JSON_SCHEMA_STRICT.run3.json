@@ -1,0 +1,21 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"id\":\"spec-audit-3step-plan\",\"steps\":[{\"name\":\"Establish audit scope and success criteria\",\"ok\":true,\"reason\":\"Identify the document’s purpose, target users, in/out of scope items, assumptions, constraints, and measurable acceptance criteria so the audit has a clear standard to evaluate against.\"},{\"name\":\"Check completeness, consistency, and testability\",\"ok\":true,\"reason\":\"Verify all requirements are unambiguous, uniquely identified, non-contradictory, and traceable; confirm edge cases, error handling, non-functional requirements (performance, security, accessibility, reliability), and dependencies are covered; ensure each requirement is testable with clear inputs/outputs.\"},{\"name\":\"Validate feasibility and alignment with stakeholders\",\"ok\":true,\"reason\":\"Review technical feasibility, architecture fit, data/API contracts, and operational considerations; run stakeholder review to confirm priorities and resolve gaps; produce an issues log with severity, proposed fixes, owners, and deadlines, then update the spec accordingly.\"}],\"final\":\"Audit the spec by (1) defining scope and acceptance criteria, (2) verifying completeness/consistency/testability of all requirements, and (3) validating feasibility and stakeholder alignment while producing a prioritized issues log and updated spec.\"}",
+  "usage": {
+    "input_tokens": 59,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 257,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 316
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

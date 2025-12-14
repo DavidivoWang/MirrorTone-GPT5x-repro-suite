@@ -1,0 +1,21 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"id\":\"audit-spec-plan-001\",\"steps\":[{\"name\":\"Scope and structure review\",\"ok\":true,\"reason\":\"Identify document purpose, audience, and boundaries; map sections; confirm that all required components (requirements, assumptions, constraints, interfaces, acceptance criteria) are present and clearly labeled.\"},{\"name\":\"Content quality and consistency check\",\"ok\":true,\"reason\":\"Evaluate clarity, completeness, and testability of each requirement; check for ambiguities, contradictions, missing edge cases, and alignment with referenced standards or upstream documents.\"},{\"name\":\"Traceability and validation readiness\",\"ok\":true,\"reason\":\"Ensure each requirement is uniquely identifiable, traceable to business goals and stakeholders, and mappable to test cases or verification methods; log findings and prioritize issues for remediation.\"}],\"final\":\"Use these three steps—scope/structure review, content quality check, and traceability/validation assessment—to systematically audit the spec and produce a prioritized list of issues to address.\"}",
+  "usage": {
+    "input_tokens": 59,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 205,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 264
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}

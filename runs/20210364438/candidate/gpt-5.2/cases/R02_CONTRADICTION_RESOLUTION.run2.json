@@ -1,0 +1,21 @@
+{
+  "case_id": "R02_CONTRADICTION_RESOLUTION",
+  "run_index": 2,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "ERR: I previously stated “model A has 1M context,” which conflicts with the newer documentation.  \nFIX: Use 400k context length for model A going forward.  \nWHY: The latest official documentation supersedes earlier/incorrect claims; my prior statement was outdated or mistaken.  \nSRC: Your new documentation stating 400k context (no link provided here).",
+  "usage": {
+    "input_tokens": 43,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 79,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 122
+  },
+  "passed_all_checks": true,
+  "notes": [],
+  "hallucination_flags": 0
+}
