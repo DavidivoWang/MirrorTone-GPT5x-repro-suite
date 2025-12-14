@@ -1,2 +1,0 @@
-{"case_id": "S01_JSON_SCHEMA_STRICT", "domain": "STRUCTURED_OUTPUT", "prompt": "Return ONLY valid JSON (no markdown, no extra text). Schema: {\"id\":string,\"steps\":[{\"name\":string,\"ok\":boolean,\"reason\":string}],\"final\":string}. Task: Build a 3-step plan to audit a spec document.", "checks": ["json_parse", "no_extra_text"]}
-{"case_id": "R02_CONTRADICTION_RESOLUTION", "domain": "RELIABILITY", "prompt": "You previously said 'model A has 1M context'. New doc says it has 400k. Write ERR→FIX→WHY→SRC in 4 lines, and stop.", "checks": ["no_extra_text"]}
