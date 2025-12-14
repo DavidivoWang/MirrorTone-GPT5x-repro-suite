@@ -1,0 +1,11 @@
+fixed_params:
+  temperature: 0.2
+  top_p: 1.0
+  max_output_tokens: 1200
+
+run_policy:
+  n_runs_per_case: 3
+  randomized_order: true
+
+scoring:
+  no_extra_text_strict: true
