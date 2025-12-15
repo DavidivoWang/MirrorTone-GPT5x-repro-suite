@@ -1,0 +1,26 @@
+{
+  "case_id": "S10_SORT_OBJECTS_TIEBREAK_JSON",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"items\":[{\"name\":\"delta\",\"score\":1.95},{\"name\":\"alpha\",\"score\":1.2},{\"name\":\"beta\",\"score\":1.2},{\"name\":\"gamma\",\"score\":0.95}]}",
+  "usage": {
+    "input_tokens": 97,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 55,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 152
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['items']}:manual_check:{'type': 'json_has_keys', 'keys': ['items']}",
+    "{'type': 'json_list_len', 'path': ['items'], 'len': 4}:manual_check:{'type': 'json_list_len', 'path': ['items'], 'len': 4}",
+    "{'type': 'json_value_equals', 'path': ['items'], 'value': [{'name': 'delta', 'score': 1.95}, {'name': 'alpha', 'score': 1.2}, {'name': 'beta', 'score': 1.2}, {'name': 'gamma', 'score': 0.95}]}:manual_check:{'type': 'json_value_equals', 'path': ['items'], 'value': [{'name': 'delta', 'score': 1.95}, {'name': 'alpha', 'score': 1.2}, {'name': 'beta', 'score': 1.2}, {'name': 'gamma', 'score': 0.95}]}"
+  ],
+  "hallucination_flags": 0
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "R11_CONTRADICTION_PICK_LATEST_JSON",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"limit\": 12}",
+  "usage": {
+    "input_tokens": 67,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 83
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['limit']}:manual_check:{'type': 'json_has_keys', 'keys': ['limit']}",
+    "{'type': 'json_value_equals', 'path': ['limit'], 'value': 12}:manual_check:{'type': 'json_value_equals', 'path': ['limit'], 'value': 12}"
+  ],
+  "hallucination_flags": 0
+}

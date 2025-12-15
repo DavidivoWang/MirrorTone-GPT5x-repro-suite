@@ -1,0 +1,25 @@
+{
+  "case_id": "F11_JSON_SUMMARY_WORDCOUNT_7",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"summary\":\"Delta tables display differences between data versions.\"}",
+  "usage": {
+    "input_tokens": 48,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 64
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['summary']}:manual_check:{'type': 'json_has_keys', 'keys': ['summary']}",
+    "{'type': 'json_string_word_count_exact', 'path': ['summary'], 'count': 7}:manual_check:{'type': 'json_string_word_count_exact', 'path': ['summary'], 'count': 7}"
+  ],
+  "hallucination_flags": 0
+}

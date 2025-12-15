@@ -1,0 +1,26 @@
+{
+  "case_id": "A12_FRACTION_SIMPLIFY_JSON",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"numerator\":10288,\"denominator\":65751}",
+  "usage": {
+    "input_tokens": 41,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 23,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 64
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['numerator', 'denominator']}:manual_check:{'type': 'json_has_keys', 'keys': ['numerator', 'denominator']}",
+    "{'type': 'json_value_equals', 'path': ['numerator'], 'value': 10288}:manual_check:{'type': 'json_value_equals', 'path': ['numerator'], 'value': 10288}",
+    "{'type': 'json_value_equals', 'path': ['denominator'], 'value': 65751}:manual_check:{'type': 'json_value_equals', 'path': ['denominator'], 'value': 65751}"
+  ],
+  "hallucination_flags": 0
+}

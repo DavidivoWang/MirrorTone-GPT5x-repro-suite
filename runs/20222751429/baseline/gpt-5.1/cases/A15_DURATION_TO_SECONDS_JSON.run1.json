@@ -1,0 +1,25 @@
+{
+  "case_id": "A15_DURATION_TO_SECONDS_JSON",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"seconds\": 183845}",
+  "usage": {
+    "input_tokens": 39,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 17,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 56
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['seconds']}:manual_check:{'type': 'json_has_keys', 'keys': ['seconds']}",
+    "{'type': 'json_value_equals', 'path': ['seconds'], 'value': 183845}:manual_check:{'type': 'json_value_equals', 'path': ['seconds'], 'value': 183845}"
+  ],
+  "hallucination_flags": 0
+}

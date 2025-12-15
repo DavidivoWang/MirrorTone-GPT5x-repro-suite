@@ -1,0 +1,25 @@
+{
+  "case_id": "A10_BIGINT_ARITH_JSON",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"Z\":121932631124828260}",
+  "usage": {
+    "input_tokens": 58,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 14,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 72
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['Z']}:manual_check:{'type': 'json_has_keys', 'keys': ['Z']}",
+    "{'type': 'json_value_equals', 'path': ['Z'], 'value': 121932630788728893}:manual_check:{'type': 'json_value_equals', 'path': ['Z'], 'value': 121932630788728893}"
+  ],
+  "hallucination_flags": 0
+}

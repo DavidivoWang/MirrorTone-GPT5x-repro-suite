@@ -1,0 +1,25 @@
+{
+  "case_id": "F10_JSON_STRING_ESCAPING_JSON",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"text\": \"He said \\\"Hi\\\". Path: C:\\\\Temp\\\\file.txt\"}",
+  "usage": {
+    "input_tokens": 47,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 29,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 76
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['text']}:manual_check:{'type': 'json_has_keys', 'keys': ['text']}",
+    "{'type': 'json_value_equals', 'path': ['text'], 'value': 'He said \"Hi\". Path: C:\\\\Temp\\\\file.txt'}:manual_check:{'type': 'json_value_equals', 'path': ['text'], 'value': 'He said \"Hi\". Path: C:\\\\Temp\\\\file.txt'}"
+  ],
+  "hallucination_flags": 0
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "A13_DETERMINANT_3X3_JSON",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"det\":156}",
+  "usage": {
+    "input_tokens": 60,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 9,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 69
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['det']}:manual_check:{'type': 'json_has_keys', 'keys': ['det']}",
+    "{'type': 'json_value_equals', 'path': ['det'], 'value': 290}:manual_check:{'type': 'json_value_equals', 'path': ['det'], 'value': 290}"
+  ],
+  "hallucination_flags": 0
+}

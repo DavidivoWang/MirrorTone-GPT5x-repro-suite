@@ -1,0 +1,25 @@
+{
+  "case_id": "F14_UNICODE_EXACT_JSON",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"word\":\"café\"}",
+  "usage": {
+    "input_tokens": 42,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 58
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['word']}:manual_check:{'type': 'json_has_keys', 'keys': ['word']}",
+    "{'type': 'json_value_equals', 'path': ['word'], 'value': 'café'}:manual_check:{'type': 'json_value_equals', 'path': ['word'], 'value': 'café'}"
+  ],
+  "hallucination_flags": 0
+}

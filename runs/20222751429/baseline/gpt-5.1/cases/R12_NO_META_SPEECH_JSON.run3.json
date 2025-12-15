@@ -1,0 +1,26 @@
+{
+  "case_id": "R12_NO_META_SPEECH_JSON",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"a\":\"Check data source, joins, filters, and aggregation logic\"}",
+  "usage": {
+    "input_tokens": 70,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 25,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 95
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['a']}:manual_check:{'type': 'json_has_keys', 'keys': ['a']}",
+    "{'type': 'json_string_max_len', 'path': ['a'], 'max_len': 60}:manual_check:{'type': 'json_string_max_len', 'path': ['a'], 'max_len': 60}",
+    "{'type': 'forbidden_substrings', 'substrings': ['as an AI', \"I can't\", 'I cannot', 'sorry']}:manual_check:{'type': 'forbidden_substrings', 'substrings': ['as an AI', \"I can't\", 'I cannot', 'sorry']}"
+  ],
+  "hallucination_flags": 0
+}

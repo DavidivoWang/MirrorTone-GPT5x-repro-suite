@@ -1,0 +1,25 @@
+{
+  "case_id": "A14_PRIME_COUNT_200_JSON",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"count\": 46}",
+  "usage": {
+    "input_tokens": 29,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 45
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['count']}:manual_check:{'type': 'json_has_keys', 'keys': ['count']}",
+    "{'type': 'json_value_equals', 'path': ['count'], 'value': 46}:manual_check:{'type': 'json_value_equals', 'path': ['count'], 'value': 46}"
+  ],
+  "hallucination_flags": 0
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "S11_SORT_NUMBERS_ASC_JSON",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"sorted\":[-7,-7,0,5,13,13,42,99]}",
+  "usage": {
+    "input_tokens": 54,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 30,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 84
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['sorted']}:manual_check:{'type': 'json_has_keys', 'keys': ['sorted']}",
+    "{'type': 'json_list_len', 'path': ['sorted'], 'len': 8}:manual_check:{'type': 'json_list_len', 'path': ['sorted'], 'len': 8}",
+    "{'type': 'json_list_sorted', 'path': ['sorted'], 'order': 'asc'}:manual_check:{'type': 'json_list_sorted', 'path': ['sorted'], 'order': 'asc'}",
+    "{'type': 'json_value_equals', 'path': ['sorted'], 'value': [-7, -7, 0, 5, 13, 13, 42, 99]}:manual_check:{'type': 'json_value_equals', 'path': ['sorted'], 'value': [-7, -7, 0, 5, 13, 13, 42, 99]}"
+  ],
+  "hallucination_flags": 0
+}

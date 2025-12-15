@@ -1,0 +1,25 @@
+{
+  "case_id": "A16_LUHN_CHECK_DIGIT_JSON",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"check_digit\": 3}",
+  "usage": {
+    "input_tokens": 41,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 17,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 58
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['check_digit']}:manual_check:{'type': 'json_has_keys', 'keys': ['check_digit']}",
+    "{'type': 'json_value_equals', 'path': ['check_digit'], 'value': 3}:manual_check:{'type': 'json_value_equals', 'path': ['check_digit'], 'value': 3}"
+  ],
+  "hallucination_flags": 0
+}

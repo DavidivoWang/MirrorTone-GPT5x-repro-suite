@@ -1,0 +1,25 @@
+{
+  "case_id": "S12_JSON_SCHEMA_NESTED_STRICT",
+  "run_index": 1,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\n  \"meta\": {\n    \"version\": 1,\n    \"lang\": \"en\"\n  },\n  \"data\": [\n    {\n      \"id\": \"ID-01\",\n      \"value\": 7\n    },\n    {\n      \"id\": \"ID-02\",\n      \"value\": 11\n    },\n    {\n      \"id\": \"ID-03\",\n      \"value\": 13\n    }\n  ]\n}",
+  "usage": {
+    "input_tokens": 108,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 100,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 208
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'required': ['meta', 'data'], 'properties': {'meta': {'type': 'object', 'additionalProperties': False, 'required': ['version', 'lang'], 'properties': {'version': {'type': 'integer'}, 'lang': {'type': 'string', 'enum': ['zh-Hant', 'en']}}}, 'data': {'type': 'array', 'minItems': 3, 'maxItems': 3, 'items': {'type': 'object', 'additionalProperties': False, 'required': ['id', 'value'], 'properties': {'id': {'type': 'string', 'pattern': '^ID-[0-9]{2}$'}, 'value': {'type': 'integer'}}}}}}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'required': ['meta', 'data'], 'properties': {'meta': {'type': 'object', 'additionalProperties': False, 'required': ['version', 'lang'], 'properties': {'version': {'type': 'integer'}, 'lang': {'type': 'string', 'enum': ['zh-Hant', 'en']}}}, 'data': {'type': 'array', 'minItems': 3, 'maxItems': 3, 'items': {'type': 'object', 'additionalProperties': False, 'required': ['id', 'value'], 'properties': {'id': {'type': 'string', 'pattern': '^ID-[0-9]{2}$'}, 'value': {'type': 'integer'}}}}}}}",
+    "{'type': 'json_value_equals', 'path': [], 'value': {'meta': {'version': 1, 'lang': 'en'}, 'data': [{'id': 'ID-01', 'value': 7}, {'id': 'ID-02', 'value': 11}, {'id': 'ID-03', 'value': 13}]}}:manual_check:{'type': 'json_value_equals', 'path': [], 'value': {'meta': {'version': 1, 'lang': 'en'}, 'data': [{'id': 'ID-01', 'value': 7}, {'id': 'ID-02', 'value': 11}, {'id': 'ID-03', 'value': 13}]}}"
+  ],
+  "hallucination_flags": 0
+}

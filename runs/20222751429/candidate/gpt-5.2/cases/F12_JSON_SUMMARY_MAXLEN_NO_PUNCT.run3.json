@@ -1,0 +1,25 @@
+{
+  "case_id": "F12_JSON_SUMMARY_MAXLEN_NO_PUNCT",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"s\":\"Models differ under harder tests\"}",
+  "usage": {
+    "input_tokens": 67,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 13,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 80
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['s']}:manual_check:{'type': 'json_has_keys', 'keys': ['s']}",
+    "{'type': 'json_string_max_len', 'path': ['s'], 'max_len': 40}:manual_check:{'type': 'json_string_max_len', 'path': ['s'], 'max_len': 40}"
+  ],
+  "hallucination_flags": 0
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "S13_BUILD_ARRAY_FROM_RULES_JSON",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"rows\":[{\"id\":1,\"parity\":\"odd\",\"square\":1},{\"id\":2,\"parity\":\"even\",\"square\":4},{\"id\":3,\"parity\":\"odd\",\"square\":9},{\"id\":4,\"parity\":\"even\",\"square\":16},{\"id\":5,\"parity\":\"odd\",\"square\":25}]}",
+  "usage": {
+    "input_tokens": 47,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 80,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 127
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_has_keys', 'keys': ['rows']}:manual_check:{'type': 'json_has_keys', 'keys': ['rows']}",
+    "{'type': 'json_list_len', 'path': ['rows'], 'len': 5}:manual_check:{'type': 'json_list_len', 'path': ['rows'], 'len': 5}",
+    "{'type': 'json_each_has_keys', 'path': ['rows'], 'keys': ['id', 'parity', 'square']}:manual_check:{'type': 'json_each_has_keys', 'path': ['rows'], 'keys': ['id', 'parity', 'square']}",
+    "{'type': 'json_value_equals', 'path': ['rows'], 'value': [{'id': 1, 'parity': 'odd', 'square': 1}, {'id': 2, 'parity': 'even', 'square': 4}, {'id': 3, 'parity': 'odd', 'square': 9}, {'id': 4, 'parity': 'even', 'square': 16}, {'id': 5, 'parity': 'odd', 'square': 25}]}:manual_check:{'type': 'json_value_equals', 'path': ['rows'], 'value': [{'id': 1, 'parity': 'odd', 'square': 1}, {'id': 2, 'parity': 'even', 'square': 4}, {'id': 3, 'parity': 'odd', 'square': 9}, {'id': 4, 'parity': 'even', 'square': 16}, {'id': 5, 'parity': 'odd', 'square': 25}]}"
+  ],
+  "hallucination_flags": 0
+}
