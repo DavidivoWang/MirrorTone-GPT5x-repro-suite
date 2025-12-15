@@ -1,0 +1,23 @@
+{
+  "case_id": "F01_EXACT_TOKEN",
+  "run_index": 2,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "OK",
+  "usage": {
+    "input_tokens": 26,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 5,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 31
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'exact_match', 'text': 'OK'}:manual_check:{'type': 'exact_match', 'text': 'OK'}"
+  ],
+  "hallucination_flags": 0
+}

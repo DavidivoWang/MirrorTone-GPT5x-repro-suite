@@ -1,0 +1,26 @@
+{
+  "case_id": "A05_JSON_COMPLEMENT_SUBTRACTION",
+  "run_index": 2,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"result\":206811}",
+  "usage": {
+    "input_tokens": 48,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 10,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 58
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'result': {'type': 'integer'}}, 'required': ['result']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'result': {'type': 'integer'}}, 'required': ['result']}}",
+    "{'type': 'json_value_equals', 'path': 'result', 'value': 205811}:manual_check:{'type': 'json_value_equals', 'path': 'result', 'value': 205811}"
+  ],
+  "hallucination_flags": 0
+}

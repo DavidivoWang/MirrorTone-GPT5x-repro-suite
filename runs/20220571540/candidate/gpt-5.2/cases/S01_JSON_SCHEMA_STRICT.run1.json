@@ -1,0 +1,26 @@
+{
+  "case_id": "S01_JSON_SCHEMA_STRICT",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\n  \"title\": \"Make coffee\",\n  \"steps\": [\n    {\n      \"action\": \"Boil water\",\n      \"check\": \"Water is steaming\"\n    },\n    {\n      \"action\": \"Add grounds to filter\",\n      \"check\": \"Filter is seated\"\n    },\n    {\n      \"action\": \"Pour water and brew\",\n      \"check\": \"Coffee drips steadily\"\n    }\n  ]\n}",
+  "usage": {
+    "input_tokens": 80,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 90,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 170
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'json_has_keys', 'keys': ['title', 'steps']}:manual_check:{'type': 'json_has_keys', 'keys': ['title', 'steps']}",
+    "{'type': 'json_list_len', 'path': ['steps'], 'len': 3}:manual_check:{'type': 'json_list_len', 'path': ['steps'], 'len': 3}",
+    "{'type': 'json_each_has_keys', 'path': ['steps'], 'keys': ['action', 'check']}:manual_check:{'type': 'json_each_has_keys', 'path': ['steps'], 'keys': ['action', 'check']}",
+    "{'type': 'no_extra_text', 'json_only': True}:manual_check:{'type': 'no_extra_text', 'json_only': True}"
+  ],
+  "hallucination_flags": 0
+}

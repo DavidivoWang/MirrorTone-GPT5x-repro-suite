@@ -1,0 +1,26 @@
+{
+  "case_id": "E03_JSON_ESCAPING_QUOTES_AND_SLASHES",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"text\":\"path=\\\"C:\\\\temp\\\\new\\\"\\nand then a quote: \\\"done\\\"\"}",
+  "usage": {
+    "input_tokens": 43,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 30,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 73
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'text': {'type': 'string'}}, 'required': ['text']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'text': {'type': 'string'}}, 'required': ['text']}}",
+    "{'type': 'json_value_equals', 'path': 'text', 'value': 'path=\"C:\\\\temp\\\\new\"\\nand then a quote: \"done\"'}:manual_check:{'type': 'json_value_equals', 'path': 'text', 'value': 'path=\"C:\\\\temp\\\\new\"\\nand then a quote: \"done\"'}"
+  ],
+  "hallucination_flags": 0
+}

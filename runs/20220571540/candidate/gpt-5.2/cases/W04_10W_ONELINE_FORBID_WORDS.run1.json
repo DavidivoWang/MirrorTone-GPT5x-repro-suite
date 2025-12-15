@@ -1,0 +1,27 @@
+{
+  "case_id": "W04_10W_ONELINE_FORBID_WORDS",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "Understood I will comply with your constraints in future responses",
+  "usage": {
+    "input_tokens": 31,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 15,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 46
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'word_count', 'count': 10}:manual_check:{'type': 'word_count', 'count': 10}",
+    "{'type': 'no_punctuation'}:manual_check:{'type': 'no_punctuation'}",
+    "{'type': 'line_count', 'count': 1}:manual_check:{'type': 'line_count', 'count': 1}",
+    "{'type': 'forbidden_substrings', 'substrings': ['maybe', 'likely', 'perhaps']}:manual_check:{'type': 'forbidden_substrings', 'substrings': ['maybe', 'likely', 'perhaps']}"
+  ],
+  "hallucination_flags": 0
+}

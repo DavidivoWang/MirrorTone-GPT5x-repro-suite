@@ -1,0 +1,26 @@
+{
+  "case_id": "A04_JSON_PRIME_COUNT_100_150",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"count\": 10}",
+  "usage": {
+    "input_tokens": 31,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 47
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'count': {'type': 'integer'}}, 'required': ['count']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'count': {'type': 'integer'}}, 'required': ['count']}}",
+    "{'type': 'json_value_equals', 'path': 'count', 'value': 10}:manual_check:{'type': 'json_value_equals', 'path': 'count', 'value': 10}"
+  ],
+  "hallucination_flags": 0
+}

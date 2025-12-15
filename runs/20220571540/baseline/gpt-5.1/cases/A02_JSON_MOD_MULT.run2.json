@@ -1,0 +1,26 @@
+{
+  "case_id": "A02_JSON_MOD_MULT",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"rem\": 39}",
+  "usage": {
+    "input_tokens": 30,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 46
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'rem': {'type': 'integer'}}, 'required': ['rem']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'rem': {'type': 'integer'}}, 'required': ['rem']}}",
+    "{'type': 'json_value_equals', 'path': 'rem', 'value': 67}:manual_check:{'type': 'json_value_equals', 'path': 'rem', 'value': 67}"
+  ],
+  "hallucination_flags": 0
+}

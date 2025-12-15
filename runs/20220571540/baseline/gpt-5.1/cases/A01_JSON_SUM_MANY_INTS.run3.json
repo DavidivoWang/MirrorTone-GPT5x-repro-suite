@@ -1,0 +1,26 @@
+{
+  "case_id": "A01_JSON_SUM_MANY_INTS",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"sum\": 293222}",
+  "usage": {
+    "input_tokens": 87,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 17,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 104
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'sum': {'type': 'integer'}}, 'required': ['sum']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'sum': {'type': 'integer'}}, 'required': ['sum']}}",
+    "{'type': 'json_value_equals', 'path': 'sum', 'value': 303182}:manual_check:{'type': 'json_value_equals', 'path': 'sum', 'value': 303182}"
+  ],
+  "hallucination_flags": 0
+}

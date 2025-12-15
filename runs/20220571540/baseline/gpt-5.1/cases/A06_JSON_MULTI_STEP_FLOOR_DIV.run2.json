@@ -1,0 +1,26 @@
+{
+  "case_id": "A06_JSON_MULTI_STEP_FLOOR_DIV",
+  "run_index": 2,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "{\"x\": 4821}",
+  "usage": {
+    "input_tokens": 54,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 17,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 71
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'x': {'type': 'integer'}}, 'required': ['x']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'x': {'type': 'integer'}}, 'required': ['x']}}",
+    "{'type': 'json_value_equals', 'path': 'x', 'value': 2245}:manual_check:{'type': 'json_value_equals', 'path': 'x', 'value': 2245}"
+  ],
+  "hallucination_flags": 0
+}

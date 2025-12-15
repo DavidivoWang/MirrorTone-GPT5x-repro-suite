@@ -1,0 +1,25 @@
+{
+  "case_id": "S02_JSON_NUMERIC_ACCURACY",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"result\":132332}",
+  "usage": {
+    "input_tokens": 28,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 10,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 38
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'json_has_keys', 'keys': ['result']}:manual_check:{'type': 'json_has_keys', 'keys': ['result']}",
+    "{'type': 'json_value_equals', 'path': ['result'], 'value': 132332}:manual_check:{'type': 'json_value_equals', 'path': ['result'], 'value': 132332}",
+    "{'type': 'no_extra_text', 'json_only': True}:manual_check:{'type': 'no_extra_text', 'json_only': True}"
+  ],
+  "hallucination_flags": 0
+}

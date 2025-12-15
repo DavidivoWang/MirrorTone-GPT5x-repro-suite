@@ -1,0 +1,26 @@
+{
+  "case_id": "CXT02_RULE_CONFLICT_WORDCOUNT",
+  "run_index": 3,
+  "model": "gpt-5.1",
+  "interface": "responses",
+  "output_text": "Higher priority rule overrides conflicting instructions choose concise compliance despite secondary JSON requirement",
+  "usage": {
+    "input_tokens": 48,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 23,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 71
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'word_count', 'count': 14}:manual_check:{'type': 'word_count', 'count': 14}",
+    "{'type': 'no_punctuation'}:manual_check:{'type': 'no_punctuation'}",
+    "{'type': 'line_count', 'count': 1}:manual_check:{'type': 'line_count', 'count': 1}"
+  ],
+  "hallucination_flags": 0
+}

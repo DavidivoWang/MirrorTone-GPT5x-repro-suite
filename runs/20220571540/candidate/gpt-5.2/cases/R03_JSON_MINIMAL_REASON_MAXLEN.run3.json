@@ -1,0 +1,27 @@
+{
+  "case_id": "R03_JSON_MINIMAL_REASON_MAXLEN",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"reason\":\"They ensure consistent results and reliable debugging\"}",
+  "usage": {
+    "input_tokens": 31,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 15,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 46
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'reason': {'type': 'string'}}, 'required': ['reason']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'reason': {'type': 'string'}}, 'required': ['reason']}}",
+    "{'type': 'json_string_max_len', 'path': 'reason', 'max_len': 60}:manual_check:{'type': 'json_string_max_len', 'path': 'reason', 'max_len': 60}",
+    "{'type': 'regex', 'pattern': '^[A-Za-z0-9 \\\\u4e00-\\\\u9fff]+$'}:manual_check:{'type': 'regex', 'pattern': '^[A-Za-z0-9 \\\\u4e00-\\\\u9fff]+$'}"
+  ],
+  "hallucination_flags": 0
+}

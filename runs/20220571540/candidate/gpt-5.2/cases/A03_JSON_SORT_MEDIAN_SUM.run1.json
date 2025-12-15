@@ -1,0 +1,29 @@
+{
+  "case_id": "A03_JSON_SORT_MEDIAN_SUM",
+  "run_index": 1,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"median\":8,\"sorted\":[-10,-3,0,8,17,42,42],\"sum\":96}",
+  "usage": {
+    "input_tokens": 54,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 30,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 84
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'sorted': {'type': 'array', 'items': {'type': 'integer'}}, 'median': {'type': 'integer'}, 'sum': {'type': 'integer'}}, 'required': ['sorted', 'median', 'sum']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'sorted': {'type': 'array', 'items': {'type': 'integer'}}, 'median': {'type': 'integer'}, 'sum': {'type': 'integer'}}, 'required': ['sorted', 'median', 'sum']}}",
+    "{'type': 'json_value_equals', 'path': 'sorted', 'value': [-10, -3, 0, 8, 17, 42, 42]}:manual_check:{'type': 'json_value_equals', 'path': 'sorted', 'value': [-10, -3, 0, 8, 17, 42, 42]}",
+    "{'type': 'json_value_equals', 'path': 'median', 'value': 8}:manual_check:{'type': 'json_value_equals', 'path': 'median', 'value': 8}",
+    "{'type': 'json_value_equals', 'path': 'sum', 'value': 96}:manual_check:{'type': 'json_value_equals', 'path': 'sum', 'value': 96}",
+    "{'type': 'json_list_sorted', 'path': 'sorted'}:manual_check:{'type': 'json_list_sorted', 'path': 'sorted'}"
+  ],
+  "hallucination_flags": 0
+}

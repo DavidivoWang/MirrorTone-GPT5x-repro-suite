@@ -1,0 +1,14 @@
+{
+  "run_id": "20220571540",
+  "tag": "candidate",
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "fixed_params": {
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "max_output_tokens": 1200
+  },
+  "n_runs_per_case": 3,
+  "randomized_order": true,
+  "timestamp_utc": "20220571540"
+}

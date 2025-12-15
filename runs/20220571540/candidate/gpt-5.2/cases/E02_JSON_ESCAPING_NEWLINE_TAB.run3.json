@@ -1,0 +1,26 @@
+{
+  "case_id": "E02_JSON_ESCAPING_NEWLINE_TAB",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"text\":\"LINE1\\n\\tLINE2\"}",
+  "usage": {
+    "input_tokens": 48,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 14,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 62
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'text': {'type': 'string'}}, 'required': ['text']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'text': {'type': 'string'}}, 'required': ['text']}}",
+    "{'type': 'json_value_equals', 'path': 'text', 'value': 'LINE1\\n\\tLINE2'}:manual_check:{'type': 'json_value_equals', 'path': 'text', 'value': 'LINE1\\n\\tLINE2'}"
+  ],
+  "hallucination_flags": 0
+}

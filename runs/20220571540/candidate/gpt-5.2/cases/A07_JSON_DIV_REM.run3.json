@@ -1,0 +1,27 @@
+{
+  "case_id": "A07_JSON_DIV_REM",
+  "run_index": 3,
+  "model": "gpt-5.2",
+  "interface": "responses",
+  "output_text": "{\"q\":80004,\"r\":4941}",
+  "usage": {
+    "input_tokens": 40,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 15,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 55
+  },
+  "passed_all_checks": true,
+  "notes": [
+    "{'type': 'no_extra_text'}:manual_check:{'type': 'no_extra_text'}",
+    "{'type': 'json_parse'}:manual_check:{'type': 'json_parse'}",
+    "{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'q': {'type': 'integer'}, 'r': {'type': 'integer'}}, 'required': ['q', 'r']}}:manual_check:{'type': 'json_schema', 'schema': {'type': 'object', 'additionalProperties': False, 'properties': {'q': {'type': 'integer'}, 'r': {'type': 'integer'}}, 'required': ['q', 'r']}}",
+    "{'type': 'json_value_equals', 'path': 'q', 'value': 80004}:manual_check:{'type': 'json_value_equals', 'path': 'q', 'value': 80004}",
+    "{'type': 'json_value_equals', 'path': 'r', 'value': 4941}:manual_check:{'type': 'json_value_equals', 'path': 'r', 'value': 4941}"
+  ],
+  "hallucination_flags": 0
+}
